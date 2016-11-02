@@ -21,7 +21,7 @@ ${mplayer_path} ${hourAudioFile}
 if [ ${hour} -eq 00 ]
 then
     ${git_path} pull
-    #reload pythonImage
+    supervisorctl reload pythonImage
 fi
 if [ ${hour} -ge 06 ] && [ ${hour} -le 21 ]
 then

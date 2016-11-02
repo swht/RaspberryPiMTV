@@ -8,7 +8,7 @@
 #Version:v1.0
 #######################################################
 
-import os,sys,datetime
+import os,datetime
 
 qiv_path = "/usr/bin/qiv"
 base_path = os.getcwd()
