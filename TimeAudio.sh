@@ -29,7 +29,6 @@ then
     then
         ${mplayer_path} -fs ${video_path}/Wildlife.wmv
     else
-        echo 'hhh'
-        # ${mplayer_path} -fs ${hourVideoFile}
+        ${mplayer_path} -fs ${hourVideoFile}
     fi
 fi
