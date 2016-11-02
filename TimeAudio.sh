@@ -27,8 +27,8 @@ if [ ${hour} -ge 06 ] && [ ${hour} -le 21 ]
 then
     if [ -f hourVideoFile ]
     then
-        ${mplayer_path} -fs ${video_path}/Wildlife.wmv
+        ${mplayer_path} -fs ${hourVideoFile}     
     else
-        ${mplayer_path} -fs ${hourVideoFile}
+         ${mplayer_path} -fs ${video_path}/Wildlife.wmv    
     fi
 fi
