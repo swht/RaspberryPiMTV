@@ -34,6 +34,7 @@
 3.python3
 
 	
-
+部署：
 	
-	
+	crontab
+	0 * * * * sudo sh /home/RaspberryPiMTV/TimeAudio.sh 2>&1 >> /tmp/TimeAudio.log
