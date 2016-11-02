@@ -18,13 +18,18 @@ hourVideoFile="${video_path}/${hour}.*"
 git_path=`which git`
 echo ${hourAudioFile}
 ${mplayer_path} ${hourAudioFile}
-if(${hour} -eq 00)
+if [ ${hour} -eq 00 ]
 then
-    ${git_path} pull 
+    ${git_path} pull
     #reload pythonImage
 fi
-if(${hour} -ge 06 -a ${hour} -le 21)
+if [ ${hour} -ge 06 ] && [ ${hour} -le 21 ]
 then
-    echo 'hhhh'
-    # ${mplayer_path} -fs ${hourVideoFile}
+    if [ -f hourVideoFile ]
+    then
+        ${mplayer_path} -fs ${video_path}/Wildlife.wmv
+    else
+        echo 'hhh'
+        # ${mplayer_path} -fs ${hourVideoFile}
+    fi
 fi
