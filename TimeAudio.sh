@@ -14,7 +14,7 @@ video_path=/home/RaspberryPiMTV/TimeVideo
 mplayer_path=`which mplayer`
 hour=`date|awk -F " " '{print $5}'|awk -F ":" '{print $1}'`
 hourAudioFile="${mp3_path}/${hour}.mp3"
-hourVideoFile="${video_path}/${hour}.*"
+hourVideoFile="${video_path}/${hour}.wmv"
 git_path=`which git`
 echo ${hourAudioFile}
 ${mplayer_path} ${hourAudioFile}
