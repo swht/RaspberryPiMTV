@@ -17,8 +17,8 @@ def_pic = base_path + '/picture/default_img'
 Current_month_pic = base_path + '/picture/life_img/' + today[0] + '/' + today[1]
 try:
     if os.path.isdir(Current_month_pic):
-        os.system("%s  -s -d 300 -f -m -i %s",(qiv_path,Current_month_pic))
+        os.system("qiv_path  -s -d 300 -f -m -i Current_month_pic")
     else:
-        os.system("%s  -s -d 300 -f -m -i %s",(qiv_path,def_pic))
+        os.system("qiv_path  -s -d 300 -f -m -i def_pic")
 except Exception as e :
     print("Error:",e)
