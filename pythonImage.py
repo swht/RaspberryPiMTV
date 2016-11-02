@@ -10,7 +10,7 @@
 
 import os,sys,datetime
 
-qiv_path = os.system("which qiv")
+qiv_path = "/usr/bin/qiv"
 base_path = os.getcwd()
 today = str(datetime.date.today()).split('-') #['2016', '11', '02']
 def_pic = base_path + '/picture/default_img'
